@@ -16,8 +16,6 @@ const App = () => {
   return (
     <div className="app">
       <Person persona={pupita} />
-      <Person persona={pupita} />
-      <Person persona={pupita} />
     </div>
   );
 };

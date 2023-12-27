@@ -10,6 +10,7 @@ const Header = ({ titulo, subtitulo, imagen }) => {
         backgroundSize: "cover",
         padding: "8px",
         color: "white",
+        height: "50vh"
       }}
     >
       <h1 style={{ textShadow: "0 0 5px rgba(0,0,0,0.7)" }}>{titulo}</h1>

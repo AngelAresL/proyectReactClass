@@ -1,8 +1,7 @@
 // Styling
 // http://localhost:3000/isolated/exercise/05.js
 
-import * as React from 'react'
-import '../box-styles.css'
+import "./box-styles.css";
 
 // 🐨 añadir una prop className a cada div y aplicar el nombre de clase adecuado
 // basado en el texto que aparece
@@ -24,22 +23,33 @@ import '../box-styles.css'
 // Queremos un componente que reciba una prop "size" cuyos valores pueden ser "small", "medium" o "large"
 // Se debería de poder usar así:
 // <Box size="small" style={{ backgroundColor: "lightblue" }}>
-  // small lightblue box
+// small lightblue box
 // </Box>;
 
-
-const smallBox = <div>small lightblue box</div>
-const mediumBox = <div>medium pink box</div>
-const largeBox = <div>large orange box</div>
+const smallBox = (
+  <div className="box box--small" style={{ backgroundColor: "lightblue" }}>
+    small lightblue box
+  </div>
+);
+const mediumBox = (
+  <div className="box box--medium" style={{ backgroundColor: "pink" }}>
+    medium pink box
+  </div>
+);
+const largeBox = (
+  <div className="box box--large" style={{ backgroundColor: "orange" }}>
+    large orange box
+  </div>
+);
 
 function App() {
   return (
-    <div>
+    <div style={{ fontStyle: "italic" }}>
       {smallBox}
       {mediumBox}
       {largeBox}
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
